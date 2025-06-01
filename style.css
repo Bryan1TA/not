@@ -1,8 +1,8 @@
-* {Add commentMore actions
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Inter", sans-serif;Add commentMore actions
+    font-family: "Inter", sans-serif;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -21,7 +21,19 @@ body {
     background-color: var(--almost-white);
 }
 
-header-mobile {Add commentMore actions
+
+body.menu-open::before{
+
+    content:"";
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 26, 0.5);
+    }
+    
+header-mobile {
 
     display: flex;
     justify-content: space-between;
@@ -32,6 +44,38 @@ header-mobile {Add commentMore actions
 .header-mobile button {
     border: none;
     background: none;
+    width: fit-content;Add commentMore actions
+    margin-bottom: 4rem;
+}
+
+.header-mobile nav button {
+    margin-left: auto;
+    padding: 1.5rem;
+    
+
+}
+
+.header-mobile nav {
+    position: fixed;
+    background-color: var(--almost-white);
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 16rem; 
+    z-index: 999;
+
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1.5rem;
+    
+}
+
+.header-mobile nav a {
+    text-decoration: none;
+    color: var(--dark-blue);
+    font-size: 1.125rem;
+    line-height: 1.5rem;
 }
 
 .primeira-secao{
@@ -70,8 +114,8 @@ header-mobile {Add commentMore actions
     line-height:1.5rem;
 }
 
-.margin-border-padding {Add commentMore actions
-    border-bottom: 1px solid var(--gunmetal);Add commentMore actions
+.margin-border-padding {
+    border-bottom: 1px solid var(--gunmetal);
     margin-bottom: 1.75rem;
     padding-bottom: 1.75rem; 
 
@@ -107,7 +151,7 @@ header-mobile {Add commentMore actions
     line-height: 1.625rem;
 }
 
-.terceira-secao > div {Add commentMore actions
+.terceira-secao > div {
     display: flex;
     align-items: center;
     gap: 1.5rem;
